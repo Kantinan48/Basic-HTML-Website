@@ -1,0 +1,168 @@
+/* ======================== */
+/* กำหนดเส้น hr ให้เป็นเส้นขีดแบ่งสีดำ */
+/* ======================== */
+hr {
+    border: none;
+    border-top: 2px solid #000000;
+    margin: 0.75rem 0;
+}
+/* การตั้งค่าพื้นฐานของ body และ font */
+.body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* ส่วนของคอนเทนเนอร์หลักที่ครอบเนื้อหาทั้งหมด */
+.resume-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ส่วนของ Header (หัวกระดาษ) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #000000;
+}
+
+.header-left {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 0.25rem;
+}
+
+.header-nav span {
+    color: #000000;
+}
+
+/* ส่วนของ Title (ชื่อและตำแหน่ง) */
+.title-section {
+    text-align: center;
+    padding: 2.5rem 0;
+    border-bottom: 2px solid #000000;
+}
+
+.title-section h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.title-section p {
+    margin: 0.5rem 0 0;
+    font-style: italic;
+    color: #555555;
+}
+
+/* ส่วนของเนื้อหาหลัก (Projects, Work, Education) ใช้ Grid Layout */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    padding: 1rem 0;
+    border-bottom: 2px solid #000000;
+}
+
+.content-box {
+    padding: 0px 1rem;
+}
+
+/* เส้นขอบระหว่าง Projects และ Work Experience */
+.content-box.projects-box {
+    border-right: 2px solid #000000;
+}
+
+/* เส้นขอบระหว่าง Work Experience และ Education */
+.content-box.work-experience-box {
+    border-right: 2px solid #000000;
+}
+
+.content-box h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.content-box h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1rem 0 0.5rem;
+}
+
+.content-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content-box li {
+    margin-bottom: 0.5rem;
+}
+
+.content-box a {
+    color: #0066ff;
+    text-decoration: underline;
+}
+
+/* ส่วนของ Reviews from my Teachers */
+.reviews-section {
+    padding: 1rem 0;
+}
+
+.reviews-section h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 1rem 0 1.5rem;
+}
+
+.reviews-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.review-card {
+    border: 2px solid #000000;
+    border-radius: 12px;
+    padding: 2rem;
+    flex-basis: 50%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* ส่วนของ Footer (ลิขสิทธิ์) */
+.footer {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 2px solid #000000;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
